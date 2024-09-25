@@ -35,7 +35,7 @@ module.exports = {
 
     const query = args.join(" ");
     const userId = event.senderID;
-    const apiUrl = `https://deku-rest-api.gleeze.com/api/gpt-4o?q=${encodeURIComponent(query)}&uid=${userId}`;
+    const apiUrl = `https://markdevs-last-api.onrender.com/api/v3/gpt4?ask=${encodeURIComponent(query)}&uid=${userId}`;
 
     try {
       const { data } = await axios.get(apiUrl);
