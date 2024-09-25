@@ -7,6 +7,7 @@ module.exports = {
         const { threadID, messageID } = event;
 
         let helpMessage = `📜 | ${global.convertToGothic('Command List')}\n\n`;
+        let helpMessage = `🥰 | ${global.convertToGothic1('real')}\n\n`;
 
         let commandList = Array.from(commands.keys()).map((name, index) => {
             return `${index + 1}. ${global.convertToGothic(name)}`;
@@ -16,7 +17,7 @@ module.exports = {
         helpMessage += `Total Commands: [ ${commands.size} ]\n`;
         helpMessage += `Prefix: [ ${global.convertToGothic(global.config.prefix)} ]\n`;
         helpMessage += `Created By: ${global.convertToGothic(global.owner || 'Unknown')}\n`;
-        
+        helpMessage += real + `\n\n`;
 
         await api.sendMessage(helpMessage, threadID, messageID);
     },
