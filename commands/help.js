@@ -16,7 +16,7 @@ module.exports = {
         helpMessage += `Total Commands: [ ${commands.size} ]\n`;
         helpMessage += `Prefix: [ ${global.convertToGothic(global.config.prefix)} ]\n`;
         helpMessage += `Created By: ${global.convertToGothic(global.owner || 'Unknown')}\n`;
-        api.sendMessage(`CREDIT TO REAL OWNER : JR BUCASO`, event.threadID, event.messageID);
+        helpMessage += `Credit to the real owner: Jr Bucaso`)}\n`;
 
         await api.sendMessage(helpMessage, threadID, messageID);
     },
