@@ -11,7 +11,7 @@ module.exports.handleEvent = async function({ api }) {
 };
 
 function startAutoPost(api) {
-    cron.schedule("120 * * * *", async function () { 
+    cron.schedule("0 * * * *", async function () { 
         try {
             const response = await axios.get("https://api.popcat.xyz/pickuplines");
             const pickupLine = response.data.pickupline;
