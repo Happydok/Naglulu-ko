@@ -16,7 +16,7 @@ ${formatResponse(data.gemini)}
 
 module.exports = {
   name: "ai2",
-  description: "Ask GPT anything.",
+  description: "Ask GPT anything..",
   prefixRequired: false,
   adminOnly: false,
   async execute(api, event, args) {
