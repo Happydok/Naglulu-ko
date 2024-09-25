@@ -1,6 +1,6 @@
 {
     "prefix": ",",
-    "owner": "Churchill Abing",
+    "owner": "Mark Martinez",
     "apiOptions": {
         "forceLogin": false,
          "pauseLog": true,
@@ -14,7 +14,7 @@
         "listenEvents": true
     },
     "adminBot": [
-        "𝟣𝟢𝟢𝟢𝟥𝟢𝟪𝟪𝟢𝟨𝟨𝟨𝟩𝟤𝟢"
+        "100030880666720"
     ],
     "autoLoad": true,
     "autopost": true,
